@@ -1,0 +1,326 @@
+[33mcommit 329e0efc296161d2ec828820d0716d4a145550f1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: ashuyadav2030 <ashuyadav2030@gamil.com>
+Date:   Sun Nov 2 15:33:42 2025 +0000
+
+    Add model with LFS
+
+[33mcommit 8ac8a5cd5875944bbe380d0358746a0420f980ef[m
+Author: ashuyadav2030 <ashuyadav2030@gamil.com>
+Date:   Sun Nov 2 15:28:47 2025 +0000
+
+    final commit
+
+[1mdiff --git a/.gitattributes b/.gitattributes[m
+[1mnew file mode 100644[m
+[1mindex 0000000..de0423c[m
+[1m--- /dev/null[m
+[1m+++ b/.gitattributes[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m13_may_biscuit.pt filter=lfs diff=lfs merge=lfs -text[m
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b9090b7[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32mmyenv[m
+\ No newline at end of file[m
+[1mdiff --git a/13_may_biscuit.pt b/13_may_biscuit.pt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7fbdda0[m
+[1m--- /dev/null[m
+[1m+++ b/13_may_biscuit.pt[m
+[36m@@ -0,0 +1,3 @@[m
+[32m+[m[32mversion https://git-lfs.github.com/spec/v1[m
+[32m+[m[32moid sha256:955db0fbfbae44b6ed5ecee5f5ee3086002928dd5b802a06639e9cd6d526e48f[m
+[32m+[m[32msize 105112906[m
+[1mdiff --git a/__pycache__/run.cpython-312.pyc b/__pycache__/run.cpython-312.pyc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0810b5e[m
+Binary files /dev/null and b/__pycache__/run.cpython-312.pyc differ
+[1mdiff --git a/best.pt b/best.pt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4e57983[m
+Binary files /dev/null and b/best.pt differ
+[1mdiff --git a/biscuit_07_05_2025_sim.onnx b/biscuit_07_05_2025_sim.onnx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fecaea9[m
+Binary files /dev/null and b/biscuit_07_05_2025_sim.onnx differ
+[1mdiff --git a/classes.txt b/classes.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..effbce8[m
+[1m--- /dev/null[m
+[1m+++ b/classes.txt[m
+[36m@@ -0,0 +1,262 @@[m
+[32m+[m[32m ANMOL_DREAM_LITE_BISCUIT[m
+[32m+[m[32m ANMOL_E_TIME_BISCUIT[m
+[32m+[m[32m ANMOL_JADOO_BISCUIT[m
+[32m+[m[32m ANMOL_JEERA_DHAMAAL_BISCUIT[m
+[32m+[m[32m ANMOL_LEMON_MAZAA_BISCUIT[m
+[32m+[m[32m ANMOL_MARIE_PLUS_BISCUIT[m
+[32m+[m[32m ANMOL_PREMIUM_COCONUT_BISCUIT[m
+[32m+[m[32m ANMOL_VEG_MUNCH_BISCUIT[m
+[32m+[m[32m BISKFARM_CHAMPMALT_BISCUIT[m
+[32m+[m[32m BISKFARM_CHATPATA_SPICY_BISCUIT[m
+[32m+[m[32m BISKFARM_COCO_MALAI_BISCUIT[m
+[32m+[m[32m BISKFARM_CREAM_CRACKER_BISCUIT[m
+[32m+[m[32m BISKFARM_EAT_FIT_ATTA_MARIE_BISCUIT[m
+[32m+[m[32m BISKFARM_EAT_FIT_DIGESTIVE_BISCUIT[m
+[32m+[m[32m BISKFARM_EAT_FIT_THIN_ARROWROOT_BISCUIT[m
+[32m+[m[32m BISKFARM_ELAICHI_WONDER_BISCUIT[m
+[32m+[m[32m BISKFARM_ENGLISH_CRACKER_BISCUIT[m
+[32m+[m[32m BISKFARM_GOOGLY_BISCUIT[m
+[32m+[m[32m BISKFARM_HEYLO_COOKIES_BISCUIT[m
+[32m+[m[32m BISKFARM_JEERA_WONDER_BISCUIT[m
+[32m+[m[32m BISKFARM_JUST_GINGER_BISCUIT[m
+[32m+[m[32m BISKFARM_LICKS_BISCUIT[m
+[32m+[m[32m BISKFARM_PETIT_BEURRE_BISCUIT[m
+[32m+[m[32m BISKFARM_RICH_MARIE_BISCUIT[m
+[32m+[m[32m BISKFARM_ROYAL_CREAM_BISCUIT[m
+[32m+[m[32m BISKFARM_SNACKIES_BISCUIT[m
+[32m+[m[32m BISKFARM_SO_SWEET_BISCUIT[m
+[32m+[m[32m BISKFARM_SUGAR_FREE_MARIE_BISCUIT[m
+[32m+[m[32m BISKFARM_TOP_BUTTER_BISCUIT[m
+[32m+[m[32m BISKFARM_TOP_GOLD_BISCUIT[m
+[32m+[m[32m BISKFARM_TOP_HERBS_BISCUIT[m
+[32m+[m[32m BONN_AMERICANA_COCONUT_COOKIES_BISCUIT[m
+[32m+[m[32m BOURNVITA_BISCUIT[m
+[32m+[m[32m Britannia_5050_Golmal_BISCUIT[m
+[32m+[m[32m Britannia_5050_JEERAMASTI_BISCUIT[m
+[32m+[m[32m Britannia_5050_MASKACHASKA_BISCUIT[m
+[32m+[m[32m Britannia_5050_POTAZOZCHILLIAMERICAN_BISCUIT[m
+[32m+[m[32m Britannia_5050_POTAZOZMASTIMASALA_BISCUIT[m
+[32m+[m[32m Britannia_5050_POTAZOZ_MINT_MAGIC_BISCUIT[m
+[32m+[m[32m Britannia_5050_SWEETSALTY_BISCUIT[m
+[32m+[m[32m Britannia_5050_TOPBUTTERYBITES_BISCUIT[m
+[32m+[m[32m Britannia_BISCAFE_COFFEECRACKER_BISCUIT[m
+[32m+[m[32m Britannia_BOURBON_BISCUIT[m
+[32m+[m[32m Britannia_GOODDAY_BUTTERJEERA_BISCUIT[m
+[32m+[m[32m Britannia_GOODDAY_BUTTER_BISCUIT[m
+[32m+[m[32m Britannia_GOODDAY_CASHEW_BISCUIT[m
+[32m+[m[32m Britannia_GOODDAY_CHOCOCHIP_BISCUIT[m
+[32m+[m[32m Britannia_GOODDAY_CHUNKY_COCONUT_COOKIES_BISCUIT[m
+[32m+[m[32m Britannia_GOODDAY_CHUNKY_COOKIES_BISCUIT[m
+[32m+[m[32m Britannia_GOODDAY_CHUNKY_DIVINE_CHOCOLATECHIP_COOKIES_BISCUIT[m
+[32m+[m[32m Britannia_GOODDAY_FRUITNUT_BISCUIT[m
+[32m+[m[32m Britannia_GOODDAY_PISTABADAM_BISCUIT[m
+[32m+[m[32m Britannia_Jimjam_Pops_BISCUIT[m
+[32m+[m[32m Britannia_LITTLEHEARTS_BISCUIT[m
+[32m+[m[32m Britannia_MARIEGOLD_BISCUIT[m
+[32m+[m[32m Britannia_MILKBIKIS_BISCUIT[m
+[32m+[m[32m Britannia_MILKBIKIS_CLASSIC_BISCUIT[m
+[32m+[m[32m Britannia_MILKBIKIS_MILKCREAM_BISCUIT[m
+[32m+[m[32m Britannia_NICETIME_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_5GRAIN_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_CRACKERSF_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_DIGESTIVEZERO_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_DIGESTIVE_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_DIGESTIVE_SEEDS_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_HERBS_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_OATSCHOCOALMOND_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_OATSMILKALMOND_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_OATSORANGEALMOND_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_OATS_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_RAGI_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_SUPERSEEDS_BISCUIT[m
+[32m+[m[32m Britannia_NutriChoice_THINARROWROOT_BISCUIT[m
+[32m+[m[32m Britannia_PUREMAGIC_CHOCOLATECREAM_BISCUIT[m
+[32m+[m[32m Britannia_PUREMAGIC_CHOCOLUSH_BISCUIT[m
+[32m+[m[32m Britannia_PUREMAGIC_CHOCOSTARS_BISCUIT[m
+[32m+[m[32m Britannia_PUREMAGIC_HARRYPOTTER_BISCUIT[m
+[32m+[m[32m Britannia_PUREMAGIC_VANILLA_BISCUIT[m
+[32m+[m[32m Britannia_TIGERGLUCOSE_BISCUIT[m
+[32m+[m[32m Britannia_TIGERKRUNCH_CCKRUNCH_BISCUIT[m
+[32m+[m[32m Britannia_TIGERKRUNCH_COCONUT_BISCUIT[m
+[32m+[m[32m Britannia_TIMEPASS_CLSALTED_BISCUIT[m
+[32m+[m[32m Britannia_TREATJAM_TREATJIMJAM_BISCUIT[m
+[32m+[m[32m Britannia_TREAT_CHILLI_GUAVA_CREME_BISCUIT[m
+[32m+[m[32m Britannia_TREAT_CHOCO_CREME_BISCUIT[m
+[32m+[m[32m Britannia_TREAT_ORANGE_CREME_BISCUIT[m
+[32m+[m[32m Britannia_TREAT_VANILLA_CREME_BISCUIT[m
+[32m+[m[32m Britannia_TigerCreams_Chocolate_BISCUIT[m
+[32m+[m[32m Britannia_TigerCreams_ELAICHI_BISCUIT[m
+[32m+[m[32m Britannia_TigerCreams_ORANGE_BISCUIT[m
+[32m+[m[32m Britannia_TigerCreams_Vanilla_BISCUIT[m
+[32m+[m[32m Britannia_Tiger_Brita_BISCUIT[m
+[32m+[m[32m Britannia_VITA_MARIEGOLD_BISCUIT[m
+[32m+[m[32m CADBURY_OREO_PIKACHU_BISCUIT[m
+[32m+[m[32m CHAMPION_FRUIT_CREAM_BISCUIT[m
+[32m+[m[32m Cadbury_Oreo_ChocobakesChocoChipCookies_BISCUIT[m
+[32m+[m[32m Cadbury_Oreo_ChocobakesChocoFilledCookies_BISCUIT[m
+[32m+[m[32m Cadbury_Oreo_ChocolateCremeBiscuit_BISCUIT[m
+[32m+[m[32m Cadbury_Oreo_OriginalVanillaCremeBiscuit_BISCUIT[m
+[32m+[m[32m Cadbury_Oreo_StrawberryCremeBiscuit_BISCUIT[m
+[32m+[m[32m Cremica_Bourbon_BISCUIT[m
+[32m+[m[32m Cremica_Butter_BISCUIT[m
+[32m+[m[32m Cremica_Coconut_Cookies_BISCUIT[m
+[32m+[m[32m Cremica_Cremes_BISCUIT[m
+[32m+[m[32m Cremica_Digestive_BISCUIT[m
+[32m+[m[32m Cremica_NonStop_BISCUIT[m
+[32m+[m[32m Cremica_Oatmeal_BISCUIT[m
+[32m+[m[32m Dukes_Bourbon_BISCUIT[m
+[32m+[m[32m Dukes_CREMEFORFUN_BISCUIT[m
+[32m+[m[32m Dukes_Nice_BISCUIT[m
+[32m+[m[32m Dukes_Old_Bourbon_BISCUIT[m
+[32m+[m[32m FABSTA_BUTTER_BISCUIT[m
+[32m+[m[32m FABSTA_CHOCOLATE_BISCUIT[m
+[32m+[m[32m FABSTA_DIGESTIVE_BISCUIT[m
+[32m+[m[32m FABSTA_ORANGE_BISCUIT[m
+[32m+[m[32m Horlicks_BISCUIT[m
+[32m+[m[32m ITC_MomsMagic_FruitandMilk_BISCUIT[m
+[32m+[m[32m ITC_MomsMagic_RichCashewAlmondCookies_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_BiscuitGlucose_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_BounceDoubleCreme_ChocoVanillaCreamBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_BounceDoubleCreme_Dayandnight_ChocoVanillaCreamBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_BounceDoubleCreme_ElaichiCreamBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_BounceDoubleCreme_OrangeVanillaCreamBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_BounceDoubleCreme_PineappleBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_BounceDoubleCreme_StrawberryCreamBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_DarkFantasy_BIGChocoFills_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_DarkFantasy_BourbonBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_DarkFantasy_ChocoCremeBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_DarkFantasy_ChocoFills_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_DarkFantasy_ChocoNutFills_OriginalfilledcookieswithNuts_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_DarkFantasy_Chocochips_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_DarkFantasy_CoffeeFills_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_DarkFantasy_VanillaCremeBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_DarkFantasy_VanillaFills_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_DarkFantasy_Yumfills_Pro_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_FarmliteActive_OatswithAlmondsBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_Farmlite_Digestive_highfibre_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_Farmlite_NutsDigestive_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_Farmlite_OatswithChocolate_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_Farmlite_OatswithRaisinsBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_Farmlite_Super_Millets_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_Farmlite_Veda_Digestive_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_HIFI_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_MarieLight_Orange_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_MomsMagic_Butter_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_NiceBiscuit_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_Supermilk_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_Wowzers_Cheese_BISCUIT[m
+[32m+[m[32m ITC_Sunfeast_Wowzers_Lemon_BISCUIT[m
+[32m+[m[32m KARACHI_BAKERY_BISCUIT[m
+[32m+[m[32m LOTTE_CHOCOPIE_BISCUIT[m
+[32m+[m[32m MARIO_BISCUIT[m
+[32m+[m[32m Malkist_Cappuccino_Cracker_BISCUIT[m
+[32m+[m[32m Malkist_Cheese_Cracker_BISCUIT[m
+[32m+[m[32m Malkist_Chocolate_Cracker_BISCUIT[m
+[32m+[m[32m Malkist_Sugar_Cracker_BISCUIT[m
+[32m+[m[32m Mcvities_Digestive_BISCUIT[m
+[32m+[m[32m Mcvities_Hobnobs_BISCUIT[m
+[32m+[m[32m Mcvities_Marie_BISCUIT[m
+[32m+[m[32m Mcvities_Tasties_BISCUIT[m
+[32m+[m[32m Others_Competitors_BISCUIT[m
+[32m+[m[32m PARLE_2020_BUTTER_BISCUIT[m
+[32m+[m[32m PARLE_HideandSeek_Milano_BISCUIT[m
+[32m+[m[32m PARLE_MILK_SHAKTI_BISCUIT[m
+[32m+[m[32m PARLE_MONACO_BOX_BISCUIT[m
+[32m+[m[32m PARLE_NUTRICRUNCH_MILLET_BISCUIT[m
+[32m+[m[32m PATANJALI_AAROGYA_BISCUIT[m
+[32m+[m[32m PATANJALI_DOODH_BISCUIT[m
+[32m+[m[32m PATANJALI_MARIE_BISCUIT[m
+[32m+[m[32m PATANJALI_NARIYAL_BISCUIT[m
+[32m+[m[32m PRAN_POTATO_BARBQUE_BISCUIT[m
+[32m+[m[32m PRAN_POTATO_CHEESE_BISCUIT[m
+[32m+[m[32m PRAN_POTATO_CREAM_ONION_BISCUIT[m
+[32m+[m[32m PRAN_POTATO_SPICY_BISCUIT[m
+[32m+[m[32m PRIYAGOLD_BUTTER_DELITE_BISCUIT[m
+[32m+[m[32m PRIYAGOLD_BUTTER_LITE_BISCUIT[m
+[32m+[m[32m PRIYAGOLD_CHEESE_CRACKER_BISCUIT[m
+[32m+[m[32m PRIYAGOLD_CNC_BISCUIT[m
+[32m+[m[32m PRIYAGOLD_SNACKS_ZIGZAG_BISCUIT[m
+[32m+[m[32m Parle_2020_CashewCookies_BISCUIT[m
+[32m+[m[32m Parle_2020_GoldButterCookies_BISCUIT[m
+[32m+[m[32m Parle_2020_GoldCashewCookies_BISCUIT[m
+[32m+[m[32m Parle_2020_GoldChocoChip_Cookies_BISCUIT[m
+[32m+[m[32m Parle_2020_NiceSugarSprinkledBiscuit_BISCUIT[m
+[32m+[m[32m Parle_Coconut_Cookies_BISCUIT[m
+[32m+[m[32m Parle_Dark_Glucose_BISCUIT[m
+[32m+[m[32m Parle_FabBourbon_BISCUIT[m
+[32m+[m[32m Parle_FabChocolate_cream_BISCUIT[m
+[32m+[m[32m Parle_FabJaminBlackCurrantFlavouredJamBiscuit_BISCUIT[m
+[32m+[m[32m Parle_FabioVanillaCremeSandwichBiscuit_BISCUIT[m
+[32m+[m[32m Parle_Glucose_BISCUIT[m
+[32m+[m[32m Parle_HappyHappy_Cookies_BISCUIT[m
+[32m+[m[32m Parle_HideSeek_Caffe_MochaCookies_BISCUIT[m
+[32m+[m[32m Parle_HideSeek_ChocoChipcreamsandwichBiscuitChocolate_BISCUIT[m
+[32m+[m[32m Parle_HideSeek_ChocoChipcreamsandwichBiscuitOrange_BISCUIT[m
+[32m+[m[32m Parle_HideSeek_ChocoChipcreamsandwichBiscuitStrawberry_BISCUIT[m
+[32m+[m[32m Parle_HideSeek_Chocolate_AlmondCookies_BISCUIT[m
+[32m+[m[32m Parle_HideSeek_Classic_ChocolateChipCookies_BISCUIT[m
+[32m+[m[32m Parle_HideandSeek_BlackBourbonChoco_BISCUIT[m
+[32m+[m[32m Parle_HideandSeek_BlackBourbonVanilla_BISCUIT[m
+[32m+[m[32m Parle_HideandSeek_ChocoRolls_BISCUIT[m
+[32m+[m[32m Parle_HideandSeek_Four_Creme_Sandwich_BISCUIT[m
+[32m+[m[32m Parle_JaminCreamBiscuit_BISCUIT[m
+[32m+[m[32m Parle_Kismi_DalchiniBiscuit_BISCUIT[m
+[32m+[m[32m Parle_Krackjack_BISCUIT[m
+[32m+[m[32m Parle_Krackjack_ButterMasala_BISCUIT[m
+[32m+[m[32m Parle_MagixSandwichBiscuit_CreamChocolate_BISCUIT[m
+[32m+[m[32m Parle_MagixSandwichBiscuit_CreamElaichi_BISCUIT[m
+[32m+[m[32m Parle_MagixSandwichBiscuit_CreamOrange_BISCUIT[m
+[32m+[m[32m Parle_MagixSandwichBiscuit_CreamPineapple_BISCUIT[m
+[32m+[m[32m Parle_MagixSandwichBiscuit_CreamStrawberry_BISCUIT[m
+[32m+[m[32m Parle_Marie_BISCUIT[m
+[32m+[m[32m Parle_Monaco_Classic_BISCUIT[m
+[32m+[m[32m Parle_Monaco_Pizza_BISCUIT[m
+[32m+[m[32m Parle_Monaco_piri_piri_BISCUIT[m
+[32m+[m[32m Parle_Multi_Vita_Marie_BISCUIT[m
+[32m+[m[32m Parle_Nutricrunch_ClassicDigestiveCookies_BISCUIT[m
+[32m+[m[32m Parle_Nutricrunch_GingerCookies_BISCUIT[m
+[32m+[m[32m Parle_Nutricrunch_HoneyOatsDigestiveCookies_BISCUIT[m
+[32m+[m[32m Parle_Nutricrunch_LiteCracker_BISCUIT[m
+[32m+[m[32m Parle_Nutricrunch_Premium_Digestive_BISCUIT[m
+[32m+[m[32m Parle_OatsBerries_Biscuit_BISCUIT[m
+[32m+[m[32m Parle_ParleG_GoldBiscuit_BISCUIT[m
+[32m+[m[32m Parle_PlatinaHideSeek_CremeSandwichVanilla_BISCUIT[m
+[32m+[m[32m Parle_Royale_BISCUIT[m
+[32m+[m[32m Parle_TopDelicious_CrispyRichButteryCrackers_BISCUIT[m
+[32m+[m[32m SOBISCO_PRIME_TIME_BISCUIT[m
+[32m+[m[32m SUNDER_SUPER_COCONUT_BISCUIT[m
+[32m+[m[32m SUNFEAST_ALL_ROUNDER_SWEETSALTY_BISCUIT[m
+[32m+[m[32m SUNFEAST_MARIE_LIGHT_EVENING_BISCUIT[m
+[32m+[m[32m SUNFEAST_THIN_ARROWROOT_BISCUIT[m
+[32m+[m[32m Sunfeast_5Grain_Digestive_BISCUIT[m
+[32m+[m[32m Sunfeast_All_Rounder_CreamAndHerb_BISCUIT[m
+[32m+[m[32m Sunfeast_DarkFantasy_ChocoChunk_BISCUIT[m
+[32m+[m[32m Sunfeast_DarkFantasy_ChocoNutDipped_BISCUIT[m
+[32m+[m[32m Sunfeast_DreamCream_Chocolate_BISCUIT[m
+[32m+[m[32m Sunfeast_DreamCream_Strawberry_BISCUIT[m
+[32m+[m[32m Sunfeast_Marie_Light_BISCUIT[m
+[32m+[m[32m Sunfeast_Marie_Light_OatFibre_BISCUIT[m
+[32m+[m[32m Sunfeast_Veda_Mari_light_BISCUIT[m
+[32m+[m[32m Sunfeast_all_Round_ChatapaMasala_BISCUIT[m
+[32m+[m[32m UNIBIC_BIG_BOLD_BISCUIT[m
+[32m+[m[32m UNIBIC_CHOCOKISS_BISCUIT[m
+[32m+[m[32m UNIBIC_ORANGE_SPLASH_BISCUIT[m
+[32m+[m[32m Unibic_Biscott_BISCUIT[m
+[32m+[m[32m Unibic_Butter_Cookies_BISCUIT[m
+[32m+[m[32m Unibic_Cashew_Badam_BISCUIT[m
+[32m+[m[32m Unibic_ChocoChipCookies_BISCUIT[m
+[32m+[m[32m Unibic_ChocoNut_Cookies_BISCUIT[m
+[32m+[m[32m Unibic_Choco_Hazelnut_Cookies_BISCUIT[m
+[32m+[m[32m Unibic_Choco_Ripple_Cookies_BISCUIT[m
+[32m+[m[32m Unibic_Coconut_Cookies_BISCUIT[m
+[32m+[m[32m Unibic_Fruit_Nut_BISCUIT[m
+[32m+[m[32m Unibic_Ginger_Cookies_BISCUIT[m
+[32m+[m[32m Unibic_Honey_Oatmeal_BISCUIT[m
+[32m+[m[32m Unibic_Jeera_Cookies_BISCUIT[m
+[32m+[m[32m Unibic_Milk_Cookies_BISCUIT[m
+[32m+[m[32m Unibic_OatsDigestive_BISCUIT[m
+[32m+[m[32m Unibic_Pista_Badam_BISCUIT[m
+[32m+[m[32m Unibic_Snappers_PotatoCrackers_OnionCream_BISCUIT[m
+[32m+[m[32m Unibic_Snappers__PotatoCrackers_Achari_Mango_BISCUIT[m
+[32m+[m[32m Unibic_Snappers__PotatoCrackers_IndieSpice_BISCUIT[m
+[32m+[m[32m Unibic_SugarFree_BISCUIT[m
+\ No newline at end of file[m
+[1mdiff --git a/requirements.txt b/requirements.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0b96aa8[m
+[1m--- /dev/null[m
+[1m+++ b/requirements.txt[m
+[36m@@ -0,0 +1,88 @@[m
+[32m+[m[32mannotated-doc==0.0.3[m
+[32m+[m[32mannotated-types==0.7.0[m
+[32m+[m[3
